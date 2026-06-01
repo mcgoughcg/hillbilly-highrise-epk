@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hillbilly High-Rise | EPK</title>
+
+<style>
+/* GLOBAL STYLES */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+p {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-size: 1.2rem;
+}
+
+/* NAVIGATION */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.75);
+    padding: 15px 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* HERO SECTION */
+#hero {
+    height: 100vh;
+    background-image: url('https://img1.wsimg.com/isteam/ip/49fab588-42f4-4292-9fe4-d4094ff32fd4/IMG_4866.png/:/rs=w:984,h:694');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.hero-tagline {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: #ffcc00;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background: #fff;
+}
+
+/* DARK SECTIONS */
+.dark-section {
+    background: #111;
+}
+
+/* BAND MEMBER GRID */
+.band-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.band-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.band-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.band-card p {
+    font-size: 1rem;
+}
+
+/* VIDEO EMBEDS */
+.video-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    padding: 40px 20px;
+    background: #000;
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#band">Band</a>
+    <a href="#video">Video</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-content">
+        <div class="hero-title">Hillbilly High-Rise</div>
+        <div class="hero-tagline">High-Energy Country • Rock • Party Band</div>
+        <a href="https://www.facebook.com/HillbillyHighRiseBlm/" target="_blank" class="btn">Visit Our Facebook</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="dark-section">
+    <h2>About the Band</h2>
+    <p>
+        Hillbilly High-Rise delivers a high-energy mix of modern country, rock, and 
+        crowd-pleasing party anthems. With powerful vocals, tight musicianship, and a 
+        stage presence that fills every room, the band brings a full-throttle live 
+        experience built for festivals, bars, private events, and anywhere people want 
+        to dance and sing along.
+    </p>
+</section>
+
+<!-- BAND -->
+<section id="band">
+    <h2>Meet the Band</h2>
+    <div class="band-grid">
+        <div class="band-card">
+            <h3>Member Name</h3>
+            <p>Instrument / Role</p>
+        </div>
+        <div class="band-card">
+            <h3>Member Name</h3>
+            <p>Instrument / Role</p>
+        </div>
+        <div class="band-card">
+            <h3>Member Name</h3>
+            <p>Instrument / Role</p>
+        </div>
+    </div>
+</section>
+
+<!-- VIDEO -->
+<section id="video" class="dark-section">
+    <h2>Live Video</h2>
+    <div class="video-wrapper">
+        <iframe src="https://www.facebook.com/HillbillyHighRiseBlm/reels_tab"></iframe>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Booking & Contact</h2>
+    <p>For booking, inquiries, and upcoming shows:</p>
+    <a href="https://www.facebook.com/HillbillyHighRiseBlm/" target="_blank" class="btn">Contact Us on Facebook</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Hillbilly High-Rise — All Rights Reserved
+</footer>
+
+</body>
+</html>
