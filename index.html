@@ -56,6 +56,35 @@ nav a:hover {
     color: #ffcc00;
 }
 
+    /* MOBILE — ONE CARD PER ROW + BIGGER PHOTOS */
+@media (max-width: 600px) {
+    .band-grid {
+        grid-template-columns: 1fr; /* One card per row */
+        gap: 50px; /* More breathing room between cards */
+    }
+
+    .band-card {
+        padding: 0 10px; /* Slight side padding for clean edges */
+    }
+
+    .band-photo {
+        height: 420px;          /* Larger, more dramatic photos */
+        object-fit: cover;
+        object-position: top;   /* Keeps faces visible */
+        border-radius: 10px;
+    }
+
+    .band-card h3 {
+        font-size: 1.6rem;      /* Larger names */
+        margin-top: 15px;
+    }
+
+    .band-card p {
+        font-size: 1.1rem;      /* More readable text */
+        line-height: 1.55;
+    }
+}
+
 /* HERO SECTION */
 #hero {
     height: 100vh;
