@@ -148,6 +148,24 @@ iframe {
     border-radius: 8px;
 }
 
+/* LIVE PERFORMANCE PHOTO GALLERY */
+.live-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.live-gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
 /* FOOTER */
 footer {
     padding: 40px 20px;
@@ -273,12 +291,18 @@ footer {
 </section>
 
 <!-- VIDEO -->
-<section id="video" class="dark-section">
-    <h2>Live Video</h2>
-    <div class="video-wrapper">
-        <iframe src="YOUR_VIDEO_EMBED_URL"></iframe>
+<section id="video">
+    <h2>Live Performance Photos</h2>
+    <div class="live-gallery">
+        <img src="images/lp1.jpg" alt="Live Performance 1">
+        <img src="images/lp2.jpg" alt="Live Performance 2">
+        <img src="images/lp3.jpg" alt="Live Performance 3">
+        <img src="images/lp4.jpg" alt="Live Performance 4">
+        <img src="images/lp5.jpg" alt="Live Performance 5">
+        <img src="images/lp6.jpg" alt="Live Performance 6">
     </div>
 </section>
+
 
 <!-- CONTACT -->
 <section id="contact">
