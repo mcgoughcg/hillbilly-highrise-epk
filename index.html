@@ -204,6 +204,35 @@ footer {
     }
 }
 
+/* Center alignment and section spacing */
+#band-videos {
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Force standard widescreen 16:9 proportional padding */
+.fb-video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* (9 / 16) * 100 = 16:9 Widescreen aspect ratio */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 40px; /* Clean gap spacing between stacked videos */
+    border-radius: 8px;   /* Clean visual layout alignment edge curve */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Overrides hardcoded dimensions to fill the responsive container dynamically */
+.fb-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+}
+
 </style>
 </head>
 
@@ -333,6 +362,42 @@ footer {
     </div>
 </section>
 
+<!-- NEW FACEBOOK VIDEOS AREA -->
+<section id="band-videos">
+    <h2>Live Videos</h2>
+    
+    <!-- Video Item 1 -->
+    <div class="fb-video-container">
+        <iframe 
+            src="https://www.facebook.com/22926822/videos/a.10106831027667820/1068517871531350" 
+            scrolling="no" 
+            frameborder="0" 
+            allowfullscreen="true" 
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+    </div>
+
+    <!-- Video Item 2 (Optional) -->
+    <div class="fb-video-container">
+        <iframe 
+            src="https://www.facebook.com/22926822/videos/a.10106831027667820/1299047778508235" 
+            scrolling="no" 
+            frameborder="0" 
+            allowfullscreen="true" 
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+    </div>
+     <!-- Video Item 3 (Optional) -->
+    <div class="fb-video-container">
+        <iframe 
+            src="https://www.facebook.com/22926822/videos/a.10106831027667820/727448526378076" 
+            scrolling="no" 
+            frameborder="0" 
+            allowfullscreen="true" 
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+    </div>
+</section>
 
 <!-- CONTACT -->
 <section id="contact">
